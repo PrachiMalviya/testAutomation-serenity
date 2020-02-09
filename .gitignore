@@ -1,0 +1,6 @@
+target
+.idea
+.settings
+testAutomation-Serenity.iml
+.project
+.classpath
