@@ -1,4 +1,5 @@
 package steps;
+import UI.pageObjects.herokuapp;
 import io.restassured.response.ValidatableResponse;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -13,13 +14,13 @@ import java.util.Map;
 
 import static java.lang.System.out;
 public class UIStepdefs {
-    String urlString;
 
-    @Given("I goto URL (.*)")
-    public void setUrlString(String URL)
+    @Given("perform basic auth using (.*) and (.*)")
+    public void basicAuth(String userName, String password)
     {
         try {
-            urlString = URL;
+            herokuapp obj = new herokuapp();
+            obj.login();
         }
         catch(Exception e)
         {out.println(e);}
