@@ -14,7 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <serenity.cucumber.version>1.9.51</serenity.cucumber.version>
         <encoding>UTF-8</encoding>
-        <tags>@APIEmpDetails</tags>
+        <tags>@UITests</tags>
         <parallel.tests>4</parallel.tests>
         <webdriver.base.url></webdriver.base.url>
     </properties>
